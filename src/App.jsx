@@ -20,13 +20,13 @@ export default function  App()
       };
     },[]);
     useEffect(()=>{
-      localStorage.setItem("cookieCountGrandma",Grandma );
-      localStorage.setItem("cookieCount", cookies);
-      localStorage.setItem("localCookiesPerSecond", CookiesPerSecond);
-      localStorage.setItem("cookieCountOven",Oven );
-      localStorage.setItem("cookieCountFactory",Factory );
-      localStorage.setItem("cookieCountMine",Mine );
-      localStorage.setItem("cookieCountBank",Bank );
+      localStorage.setItem("cookieCountGrandma",Grandma.toString() );
+      localStorage.setItem("cookieCount", cookies.toString());
+      localStorage.setItem("localCookiesPerSecond", CookiesPerSecond.toString());
+      localStorage.setItem("cookieCountOven",Oven.toString() );
+      localStorage.setItem("cookieCountFactory",Factory.toString() );
+      localStorage.setItem("cookieCountMine",Mine.toString() );
+      localStorage.setItem("cookieCountBank",Bank.toString());
     },[Grandma,cookies,CookiesPerSecond]);
     function handleClick(){
       setCookies(cookies + CookiesPerSecond);
