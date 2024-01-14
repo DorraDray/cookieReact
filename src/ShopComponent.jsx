@@ -6,6 +6,7 @@ export default function ShopComponent(props){
             <button style={{backgroundColor:background}}onClick = {onclickHandler} id={id} >Buy</button>
         )
     }
+   
    return(
             <div id="divform">
             
@@ -39,7 +40,7 @@ export default function ShopComponent(props){
                 <input  type="text" value="+10000"/>
                 <Button onclickHandler={props.addBank} id="buyBank" max={100000} total ={props.cookies}/><br/><br/>
 
-            <img id="resetid" src={cm}/>
+            <img  onClick={props.reset} id="resetid" src={cm}/>
         </div>
 ) ;
 }

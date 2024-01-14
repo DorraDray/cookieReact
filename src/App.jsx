@@ -77,6 +77,16 @@ export default function  App()
                   alert("you dont have enought cookies")
               }
   }
+              function reset(){
+                setCookies(0);
+                setCookiesPerSecond(1);
+                setGrandma(0) ;
+                setMine(0);
+                setOven(0);
+                setFactory(0);
+                setBank(0);              
+                
+                 }
   return(
     
    
@@ -88,7 +98,8 @@ export default function  App()
       </div>
       <ShopComponent cookies={cookies} CookiesPerSecond={CookiesPerSecond} 
       Grandma={Grandma} Oven={Oven} Factory={Factory} Mine={Mine} Bank={Bank}
-      addGrandma={addGrandma} addOven={addOven} addFactory={addFactory} addMine={addMine} addBank={addBank} />
+      addGrandma={addGrandma} addOven={addOven} addFactory={addFactory} 
+      addMine={addMine} addBank={addBank} reset={reset}/>
     </div>
    );
 }
