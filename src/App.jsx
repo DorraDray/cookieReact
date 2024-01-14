@@ -12,7 +12,7 @@ export default function  App()
     const [Bank, setBank] =useState (parseInt(localStorage.getItem("cookieCountBank"))||0);
     useEffect(()=>{
       const myCookies = setInterval(()=>{
-        console.log(CookiesPerSecond, cookies)
+      
         setCookies((currentCookies)=>currentCookies + CookiesPerSecond);
       },1000);
       return()=>{
